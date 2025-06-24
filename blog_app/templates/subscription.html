@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #a4d27f;
+        }
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .plan-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .plan-card h2 {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .features li {
+            margin: 10px 0;
+        }
+        .features li i {
+            margin-right: 10px;
+        }
+        .btn {
+            background-color: #d18657;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #81c371;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Choose Your Plan</h1>
+    <div class="plans">
+        <div class="plan-card">
+            <h2>BASIC</h2>
+            <div class="price">$ 99 <span style="font-size:14px;">/ month</span></div>
+            <ul class="features">
+                <li><i class="fas fa-check text-green"></i> Post 30 blogs/month</li>
+                <li><i class="fas fa-times text-red"></i> Turn Readers into Subscribers</li>
+                <li><i class="fas fa-times text-red"></i> Add Paywalls to Selected Posts</li>
+                <li><i class="fas fa-times text-red"></i> Setup Payment Schedules</li>
+            </ul>
+            <button class="btn">Select And Pay</button>
+        </div>
+
+        <div class="plan-card">
+            <h2>Standard</h2>
+            <div class="price">$ 199 <span style="font-size:14px;">/ month</span></div>
+            <ul class="features">
+                <li><i class="fas fa-check text-green"></i> Post 100 blogs/month</li>
+                <li><i class="fas fa-check text-green"></i> Turn Readers into Subscribers</li>
+                <li><i class="fas fa-times text-red"></i> Add Paywalls to Selected Posts</li>
+                <li><i class="fas fa-times text-red"></i> Setup Payment Schedules</li>
+            </ul>
+            <button class="btn">Select And Pay</button>
+        </div>
+
+        <div class="plan-card">
+            <h2>Premium</h2>
+            <div class="price">$ 299 <span style="font-size:14px;">/ month</span></div>
+            <ul class="features">
+                <li><i class="fas fa-check text-green"></i> Post unlimited blogs/month</li>
+                <li><i class="fas fa-check text-green"></i> Turn Readers into Subscribers</li>
+                <li><i class="fas fa-check text-green"></i> Add Paywalls to Selected Posts</li>
+                <li><i class="fas fa-check text-green"></i> Setup Payment Schedules</li>
+            </ul>
+            <button class="btn">Select And Pay</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 MyBlog. All rights reserved.
+    </footer>
+</body>
+</html>

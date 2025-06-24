@@ -1,0 +1,25 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #a4d27f;
+    margin: 0;
+}
+/* static/css/style.css */
+
+.payment-box {
+    width: 300px;
+    margin: 150px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #F37254;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
